@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Accordion</title>
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#logo" class="navbar__logo">
+             <img src="/Developer Test/Logo.svg" alt="logo">
+             
+            </a>
+
+        
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <div class="navbar__link" id="our-team" >OUR TEAM</div>
+                </li>
+                <li class="navbar__item">
+                    <div class="navbar__link" id="personal-details" >PERSONAL DETAILS</div>
+                </li>
+                <li class="navbar__item">
+                   <div class="navbar__link" id="contact-us" >CONTACT US</div>
+                </li>
+                
+            </ul>
+    
+        </div>
+
+    </nav>
+    <!-- Accordian -->
+   <div class="d-flex flex-row accordion-container">
+    <div class="accordion-item">
+      <button class="accordion-button"> <!-- data-bs-toggle="collapse" data-bs-target="#our-team-accordion"> -->
+        <div class="accordion-body bg-o text-black">
+          <h4>Our team</h4>
+        </div>
+      </button>
+
+      <!-- Our team Content -->
+       <div class="collapse" id="our-team-content"> 
+        <div class="team">
+          <h2>Our Team</h2>
+          <p>We believe that great ideas come to life through collaboration and innovation. Our team is a diverse group of passionate professionals, each bringing unique skills and experiences to the table.
+          From creative designers and strategic thinkers to technical experts and problem-solvers, we are united by a shared vision of delivering excellence in everything we do
+          </p> 
+       
+          <p>
+          Our mission is to empower businesses and individuals by creating innovative, sustainable, and user-friendly designs. With a culture that values integrity, growth, and teamwork, we are committed to creating meaningful solutions that make a difference. Whether it’s crafting cutting-edge designs, developing user-centered interfaces, or building sustainable solutions, our team thrives on turning challenges into opportunities.
+          </p>
+
+       
+
+         <div class="image-container">
+          <figure>
+            <img src="/Developer Test/Image 1.jpg" alt="image1">
+            <figcaption>Meredith Allen<br>
+            CEO
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/Developer Test/Image 2.jpg" alt="image2">
+            <figcaption>Thomas Woodward<br>
+            COO
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/Developer Test/Image 3.jpg" alt="image3">
+            <figcaption>Wade Barton<br>
+            Buisness Analyst
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/Developer Test/Image 4.jpg" alt="image4">
+            <figcaption>Yahir Marquez<br>
+            Marketing Executive
+            </figcaption>
+         </figure>
+
+         </div>
+
+       </div>
+       </div> 
+    </div>
+    <div class="accordion-item" id="personal-details-accordion">
+      <button class="accordion-button" data-bs-target="personal-details-accordion">
+        <div class="accordion-body bg-t text-white">
+          <h4>Personal details</h4>
+        </div>
+      </button>
+      <div>
+        <!-- Personal detail -->
+        <div class="login-container">
+            <h2>Personal Detail</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" id="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="mobile" id="mobile" placeholder="Enter your Mobile number" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input type="address" id="mobile" placeholder="Enter your address" required>
+
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item" id="contact-us-accordion">
+      <button class="accordion-button" data-bs-target="#contact-us-accordion">
+        <div class="accordion-body bg-th text-white">
+          <h4>Contact us</h4>
+        </div>
+      </button>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          We are a team of engineers, communication experts and innovators who specialise in developing technology propositions for the world around us. We noticed that in an overwhelming number of use cases, technology was not really the problem; mistrust came from how it was deployed by creators and then understood and used by consumers.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/script.js"></script>
+</body>
+</html>
